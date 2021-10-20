@@ -10,7 +10,11 @@ const Contact = ()=> {
     <>
         <Layout pageHeading='Contact' pageTitle='Contact us' >
             <p>wil je meer weten bel me </p>
-            <StaticImage src="../images/baukje.jpg" alt="baukje rienks portret" />
+            
+            <StaticImage 
+            src="../images/baukje.jpg" 
+            alt="baukje rienks portret" 
+            />
         
         </Layout>
     </>
