@@ -10,7 +10,19 @@ const Homepage = ()=> {
     <>
         <Layout pageHeading='Home' pageTitle='Site home' >
             <p>Design research onderzoek </p>
-            <StaticImage src="https://www.diariesofmagazine.com/wp-content/uploads/2018/11/Reasons-to-visit-Kyrgyzstan-Lenin.jpg" alt="kyrgyz mountain" />
+
+            <StaticImage 
+            src="https://www.diariesofmagazine.com/wp-content/uploads/2018/11/Reasons-to-visit-Kyrgyzstan-Lenin.jpg" 
+            alt="kyrgyz mountain" 
+            
+            />
+
+            <StaticImage 
+            src="../images/baukje.jpg" 
+            alt="baukje rienks portret" 
+    
+
+            />
 
 
         

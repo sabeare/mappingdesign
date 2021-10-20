@@ -13,7 +13,7 @@ const About = ()=> {
         
 
         <Link to="/">
-        home
+        home test link
       </Link>
   
       </>
