@@ -8,15 +8,6 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "blog",
-        path: "${__dirname}/blog",
-      },
-     },
-
-
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -33,6 +24,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: '${__dirname}/blog/',
+      },
+      __key: "blog",
     },
   ],
 };
