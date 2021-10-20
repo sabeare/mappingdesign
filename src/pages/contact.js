@@ -1,24 +1,23 @@
 // Step 1: Import React. This lets you use JSX inside your .js file.
 import * as React from "react";
-import {Link} from 'gatsby'
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 
 /* Step 2: Define your component. Note that your
 component name should start with a capital letter. */
-const Homepage = ()=> {
+const Contact = ()=> {
   return (
     <>
-        <Layout pageHeading='Home' pageTitle='Site home' >
-            <p>Design research onderzoek </p>
+        <Layout pageHeading='Contact' pageTitle='Contact us' >
+            <p>wil je meer weten bel me </p>
         
         </Layout>
-        <Link to="/">
-        home
-      </Link>
     </>
   )
+    
+    
 };
 
 /* Step 3: Export your component so it
 can be used by other parts of your app. */
-export default Homepage;
+export default Contact;
