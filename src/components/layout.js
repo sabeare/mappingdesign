@@ -14,7 +14,7 @@ import {
 /* Step 2: Define your component. Note that your
 component name should start with a capital letter. */
 const Layout = ({pageTitle, pageHeading, children})=> {
-    const data = useStaticQuery(graphql`
+    const data = useStaticQuery (graphql`
     query title {
         site {
           siteMetadata {
@@ -33,7 +33,7 @@ const Layout = ({pageTitle, pageHeading, children})=> {
          <nav> 
             <ul className={navLinks}>
                 <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li>
-                <li className={navLinkItem}><Link to="/blog" className={navLinkText}>Blog</Link></li>
+                <li className={navLinkItem}><Link to="/blog" className={navLinkText}>Digital garden</Link></li>
                 <li className={navLinkItem}><Link to="/about" className={navLinkText}>About</Link></li>
                 <li className={navLinkItem}><Link to="/contact" className={navLinkText}>Contact</Link></li>
             </ul>

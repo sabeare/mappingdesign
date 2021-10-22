@@ -21,7 +21,6 @@ const Homepage = ()=> {
             src="../images/baukje.jpg" 
             alt="baukje rienks portret" 
     
-
             />
 
 

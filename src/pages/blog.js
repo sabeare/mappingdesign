@@ -4,6 +4,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 /* Step 2: Define your component. Note that your
 component name should start with a capital letter. */
@@ -12,14 +13,15 @@ const Blog = ({data})=> {
   return (
     <>
         <Layout pageHeading='Blog' pageTitle='Digital garden' >
-            <ul>
-              {data.allFile.nodes.map((node) =>{
-                 return <li key = {node.name}>{node.name}</li>;   
+            
+              {data.allMdx.nodes.map((node) =>{
+                return <article key = {node.id}>
+                    <h2>{node.frontmatter.title}</h2>
+                    <p>{node.frontmatter.date}</p>
+                    <MDXRenderer>{node.body}</MDXRenderer>
+                    </article>;   
               })} 
-            </ul>
             
-            
-        
         </Layout>
     </>
   )
@@ -29,12 +31,17 @@ const Blog = ({data})=> {
 can be used by other parts of your app. */
 
 export const query = graphql`
-    query {
-    allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
+query {
+    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
       nodes {
-        name
+        frontmatter {
+          date(formatString: "dddd, MMMM Do YYYY")
+          title
+        }
+        id
+        body
       }
     }
   }
-  `;  
+`;  
 export default Blog;
