@@ -23,8 +23,8 @@ const Homepage = ()=> {
     
             />
 
-
-        
+<iframe width="960" height="678.6901763224181" data-original-width="1191" data-original-height="842" src="https://www.thinglink.com/card/1502652636665479169" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe><script async src="//cdn.thinglink.me/jse/responsive.js"></script>
+<iframe src="https://uploads.knightlab.com/storymapjs/1ddfd8a302e864be0954d7a0cf65d553/kyrgys/index.html" frameborder="0" width="50%" height="800"></iframe>        
         </Layout>
         
     </>
