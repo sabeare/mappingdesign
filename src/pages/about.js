@@ -35,7 +35,9 @@ const About = ()=> {
 relations between interaction/ux and mapping/mapdesign? How objective is data driven digital cartography
 Data feminism What do I need to learn to use (creative) coding, datavisualisations in my project Visual code studio, online training volgen Refresh html, wdka studios aangemeld Javascript, wdka studios aangemeld, codecademy Digital garden, tiddlywiki uitproberen Research blog, extra worskshop via research station Why do algorithms annoy me? Can playfulness contribute to better understanding in complex subjects? How does multilayered storytelling look like from a data perspective
 Landscape philosophy Does the feminist approach to data contribute to social/geographical equality? What is the geography of everyday life? What is distance? How can I represent reality in a fair way on the map Public space?!! Digital cartography # Is mapping, storytelling about journeys? # How can I observe the perceptions of space and place in the real world # How do maps and identity relate to eachother</p>
-        
+
+werkt mijn i frame?
+    <iframe src="https://embed.kumu.io/6e0536dfb75419de40acd07f0914cfa3" width="940" height="600" frameborder="0"></iframe>    
         </Layout>
         
         

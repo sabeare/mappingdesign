@@ -20,6 +20,7 @@
     "gatsby-plugin-image": "^1.14.1",
     "gatsby-plugin-mdx": "^2.14.0",
     "gatsby-plugin-sharp": "^3.14.1",
+    "gatsby-remark-responsive-iframe": "^5.4.0",
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-transformer-remark": "^4.11.0",
     "gatsby-transformer-sharp": "^3.14.0",
