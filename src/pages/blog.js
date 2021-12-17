@@ -18,6 +18,8 @@ const Blog = ({data})=> {
                 return <article key = {node.id}>
                     <h2>{node.frontmatter.title}</h2>
                     <p>{node.frontmatter.date}</p>
+                    <p>{node.frontmatter.category}</p>
+                    <p><b>{node.frontmatter.tags}</b></p>
                     <MDXRenderer>{node.body}</MDXRenderer>
                     </article>;   
               })} 
@@ -37,6 +39,8 @@ query {
         frontmatter {
           date(formatString: "dddd, MMMM Do YYYY")
           title
+          tags
+          category
         }
         id
         body
